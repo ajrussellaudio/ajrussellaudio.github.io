@@ -29,7 +29,7 @@ const typography = new Typography({
         color: options.bodyColor,
       },
       'a:hover': {
-        color: '#8B0000',
+        color: '#BB0000',
       },
       blockquote: {
         ...scale(1 / 5),
