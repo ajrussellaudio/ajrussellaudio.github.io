@@ -5,16 +5,20 @@ import { TABLET_MEDIA_QUERY } from "typography-breakpoint-constants";
 const typography = new Typography({
   title: "Russell",
   baseFontSize: "21px",
-  baseLineHeight: 1.2,
+  baseLineHeight: 1.3,
   scaleRatio: 1.5,
   googleFonts: [
     {
       name: "Libre Franklin",
-      styles: ["700"]
+      styles: ["800", "700", "600"]
     },
     {
       name: "EB Garamond",
-      styles: ["400", "700"]
+      styles: ["400", "400i", "700"]
+    },
+    {
+      name: "Source Code Pro",
+      styles: ["400"]
     }
   ],
   headerFontFamily: ["Libre Franklin", "Helvetica", "sans-serif"],
@@ -23,40 +27,54 @@ const typography = new Typography({
   headerWeight: 700,
   bodyWeight: 400,
   boldWeight: 700,
-  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => {
-    const styles = {
-      a: {
-        color: options.bodyColor
-      },
-      "a:hover": {
-        color: "#BB0000"
-      },
+  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
+    a: {
+      color: "#BB0000",
+      textDecoration: "none"
+    },
+    "a:hover": {
+      textDecoration: "underline"
+    },
+    blockquote: {
+      ...scale(1 / 5),
+      color: gray(30),
+      fontStyle: "italic",
+      paddingLeft: rhythm(3 / 4),
+      marginLeft: 0,
+      marginRight: 0,
+      borderLeft: `${rhythm(1 / 4)} solid ${options.bodyColor}`
+    },
+    code: {
+      ...adjustFontSizeTo("16px"),
+      fontFamily: '"Source Code Pro", mono',
+      backgroundColor: "#272822",
+      color: "#f8f8f2",
+      padding: `${rhythm(1 / 8)} ${rhythm(1 / 4)}`,
+      borderRadius: rhythm(1 / 8)
+    },
+    "h2,h3,h4,h5,h6": {
+      paddingBottom: rhythm(1 / 4),
+      marginBottom: rhythm(1 / 4),
+      borderBottom: `1px solid ${options.bodyColor}`
+    },
+    h1: {
+      fontWeight: 800
+    },
+    "h4,h5,h6": {
+      fontWeight: 600
+    },
+    table: {
+      ...scale(-1 / 5)
+    },
+    // Mobile styles.
+    [TABLET_MEDIA_QUERY]: {
       blockquote: {
-        ...scale(1 / 5),
-        color: gray(30),
-        paddingLeft: rhythm(3 / 4),
-        marginLeft: 0,
+        marginLeft: rhythm(-3 / 4),
         marginRight: 0,
-        borderLeft: `${rhythm(1 / 4)} solid ${gray(30)}`
-      },
-      "h3,h4,h5,h6": {
-        marginBottom: rhythm(1 / 2)
-      },
-      table: {
-        ...scale(-1 / 5)
-      },
-      // Mobile styles.
-      [TABLET_MEDIA_QUERY]: {
-        blockquote: {
-          marginLeft: rhythm(-3 / 4),
-          marginRight: 0,
-          paddingLeft: rhythm(1 / 2)
-        }
+        paddingLeft: rhythm(1 / 2)
       }
-    };
-
-    return styles;
-  }
+    }
+  })
 });
 
 export default typography;

@@ -25,8 +25,9 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Yeah so this guy <strong>{author}</strong> teaches, learns and builds
-          stuff in Glasgow, Scotland.
+          <strong>{author}</strong> is a{" "}
+          {`{ _.sample(["software developer", "coding instructor", "sound engineer", "musician", "pure bawbag"]) }`}{" "}
+          from Glasgow, Scotland.
         </p>
       </div>
     );
