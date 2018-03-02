@@ -32,18 +32,20 @@ npm manifest:
       "gatsby-plugin-sharp": "^1.6.36",
       "gatsby-plugin-typography": "^1.7.15",
       "gatsby-remark-copy-linked-files": "^1.5.28",
+      "gatsby-remark-graph": "^0.2.1",
       "gatsby-remark-images": "^1.5.52",
-      "gatsby-remark-prismjs": "^1.2.15",
+      "gatsby-remark-prismjs": "^1.2.16",
       "gatsby-remark-responsive-iframe": "^1.4.17",
       "gatsby-remark-smartypants": "^1.4.11",
       "gatsby-source-filesystem": "^1.5.24",
-      "gatsby-transformer-remark": "^1.7.33",
+      "gatsby-transformer-remark": "^1.7.34",
       "gatsby-transformer-sharp": "^1.6.21",
       "lodash": "^4.17.5",
       "react-responsive-grid": "^0.3.4",
       "typeface-merriweather": "0.0.43",
       "typeface-montserrat": "0.0.43",
       "typography": "^0.16.6",
+      "typography-plugin-code": "^0.16.11",
       "typography-theme-funston": "^0.15.10",
       "typography-theme-irving": "^0.15.10",
       "typography-theme-wordpress-2016": "^0.15.10"
@@ -55,7 +57,9 @@ npm manifest:
       "prettier": "^1.11.0"
     },
     "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-    "keywords": ["gatsby"],
+    "keywords": [
+      "gatsby"
+    ],
     "license": "MIT",
     "main": "n/a",
     "repository": {
@@ -64,16 +68,13 @@ npm manifest:
     },
     "scripts": {
       "dev": "gatsby develop",
-      "lint":
-        "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+      "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
       "test": "echo \"Error: no test specified\" && exit 1",
-      "format":
-        "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+      "format": "prettier --write 'src/**/*.js' 'src/**/*.md'",
       "develop": "gatsby develop",
       "build": "gatsby build",
       "deploy": "gatsby build && gh-pages -d public -b master",
-      "fix-semi":
-        "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+      "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
     }
   }
 

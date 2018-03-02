@@ -48,14 +48,6 @@ Here's something pretty cool; graphs built with a Gatsby plugin for [Mermaid](ht
 
 ```mermaid
 graph LR
-    A[Square Rect] -- Link text --> B((Circle))
-    A --> C(Round Rect)
-    B --> D{Rhombus}
-    C --> D
-```
-
-```mermaid
-graph LR
   A(Controller) --- B(Models)
   A --- C(Views)
 ```
