@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import profilePic from './profile-pic.png'
-import { rhythm } from '../utils/typography'
+import profilePic from "./profile-pic.png";
+import { rhythm } from "../utils/typography";
 
 class Bio extends React.Component {
   render() {
-    const author = 'Alan Russell'
+    const author = "Alan Russell";
     return (
       <div
         style={{
-          display: 'flex',
-          marginBottom: rhythm(2.5),
+          display: "flex",
+          marginBottom: rhythm(2.5)
         }}
       >
         <img
@@ -21,7 +21,7 @@ class Bio extends React.Component {
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
-            borderRadius: rhythm(1 / 2),
+            borderRadius: rhythm(1 / 2)
           }}
         />
         <p>
@@ -29,8 +29,8 @@ class Bio extends React.Component {
           stuff in Glasgow, Scotland.
         </p>
       </div>
-    )
+    );
   }
 }
 
-export default Bio
+export default Bio;
