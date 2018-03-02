@@ -36,6 +36,8 @@ sum(3, 5, 9)
 # => 17
 ```
 
+And I can put text right after a code block, and it doesn't look bad either.
+
 ## Inline code
 
 Okay, cool. But how about an inline code block? `npm install -g awesome` Yeah that looks really cool, but how does affect text that appears on the next line? Well it's broken over two lines now, but I think that using variables like `className` in a sentence will be fine.
@@ -56,4 +58,10 @@ graph LR
 graph LR
   A(Controller) --- B(Models)
   A --- C(Views)
+```
+
+```mermaid
+graph BT
+  A(Client) == Request ==> B(Server)
+  B == Response ==> A
 ```

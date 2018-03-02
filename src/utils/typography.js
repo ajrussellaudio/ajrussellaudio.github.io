@@ -55,10 +55,14 @@ const typography = new Typography({
     "pre>code": {
       padding: 0
     },
+    "div.gatsby-highlight": {
+      marginTop: 0,
+      marginBottom: rhythm(1 / 2)
+    },
     "h2,h3,h4,h5,h6": {
       paddingBottom: rhythm(1 / 4),
       marginBottom: rhythm(1 / 4),
-      borderBottom: `1px solid ${options.bodyColor}`
+      borderBottom: `1px solid rgba(0, 0, 0, 0.2)`
     },
     h1: {
       fontWeight: 800
@@ -68,6 +72,9 @@ const typography = new Typography({
     },
     table: {
       ...scale(-1 / 5)
+    },
+    svg: {
+      fontFamily: '"Source Code Pro", mono'
     },
     // Mobile styles.
     [TABLET_MEDIA_QUERY]: {
