@@ -54,6 +54,6 @@ graph LR
 
 ```mermaid
 graph BT
-  A(Client) == Request ==> B(Server)
-  B == Response ==> A
+  A(Client) ==>|Request|B(Server)
+  B ==>|Response|A
 ```
