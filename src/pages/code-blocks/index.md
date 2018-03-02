@@ -39,3 +39,21 @@ sum(3, 5, 9)
 ## Inline code
 
 Okay, cool. But how about an inline code block? `npm install -g awesome` Yeah that looks really cool, but how does affect text that appears on the next line? Well it's broken over two lines now, but I think that using variables like `className` in a sentence will be fine.
+
+## Graphs
+
+Here's something pretty cool; graphs built with a Gatsby plugin for [Mermaid](https://mermaidjs.github.io/):
+
+```mermaid
+graph LR
+    A[Square Rect] -- Link text --> B((Circle))
+    A --> C(Round Rect)
+    B --> D{Rhombus}
+    C --> D
+```
+
+```mermaid
+graph LR
+  A(Controller) --- B(Models)
+  A --- C(Views)
+```

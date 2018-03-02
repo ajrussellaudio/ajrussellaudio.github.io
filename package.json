@@ -16,6 +16,7 @@
     "gatsby-plugin-sharp": "^1.6.36",
     "gatsby-plugin-typography": "^1.7.15",
     "gatsby-remark-copy-linked-files": "^1.5.28",
+    "gatsby-remark-graph": "^0.2.1",
     "gatsby-remark-images": "^1.5.52",
     "gatsby-remark-prismjs": "^1.2.16",
     "gatsby-remark-responsive-iframe": "^1.4.17",

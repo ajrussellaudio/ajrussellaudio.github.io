@@ -52,6 +52,9 @@ const typography = new Typography({
       padding: `${rhythm(1 / 8)} ${rhythm(1 / 4)}`,
       borderRadius: rhythm(1 / 8)
     },
+    "pre>code": {
+      padding: 0
+    },
     "h2,h3,h4,h5,h6": {
       paddingBottom: rhythm(1 / 4),
       marginBottom: rhythm(1 / 4),

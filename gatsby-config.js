@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Blog",
-    author: "Kyle Mathews",
+    title: "Alan Russell's Blog",
+    author: "Alan Russell",
     description: "A starter blog demonstrating what Gatsby can do.",
     siteUrl: "https://gatsbyjs.github.io/gatsby-starter-blog/"
   },
@@ -28,6 +28,13 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`
+            }
+          },
+          {
+            resolve: "gatsby-remark-graph",
+            options: {
+              language: "mermaid",
+              theme: "neutral" // could also be dark, forest, or neutral
             }
           },
           {
