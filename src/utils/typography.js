@@ -46,14 +46,7 @@ const typography = new Typography({
     },
     code: {
       ...adjustFontSizeTo("16px"),
-      fontFamily: '"Source Code Pro", mono',
-      backgroundColor: "#272822",
-      color: "#f8f8f2",
-      padding: `${rhythm(1 / 8)} ${rhythm(1 / 4)}`,
-      borderRadius: rhythm(1 / 8)
-    },
-    "pre>code": {
-      padding: 0
+      fontFamily: '"Source Code Pro", mono'
     },
     "div.gatsby-highlight": {
       marginTop: 0,

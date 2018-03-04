@@ -1,11 +1,9 @@
 ---
-title: Code Blocks
+title: Code Blocks and Graphs
 date: "2018-03-02T00:02:26.323Z"
 ---
 
-Actually what happens when you put [a link in here](https://fonts.google.com/specimen/Roboto+Slab)?
-
-I write a lot of stuff with code blocks, and it would be nice to see what they look like.
+I write a lot of stuff with code blocks, and it would be nice to see what they look like. And occasionally I might wanna do a graph.
 
 ## JavaScript
 
@@ -25,7 +23,6 @@ window.addEventListener("load", function() {
 ## Python
 
 ```python
-# Python
 def sum(*args):
     total = 0
     for number in args:
@@ -34,6 +31,26 @@ def sum(*args):
 
 sum(3, 5, 9)
 # => 17
+```
+
+## Java
+
+```java
+public class Runner {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+## React
+
+```jsx
+import React from "react";
+
+const Link = ({ to, text }) => <a href={to}>{text}</a>;
+
+export default Link;
 ```
 
 And I can put text right after a code block, and it doesn't look bad either.
@@ -54,6 +71,6 @@ graph LR
 
 ```mermaid
 graph BT
-  A(Client) ==>|Request|B(Server)
-  B ==>|Response|A
+  A(Client) -->|Request|B(Server)
+  B -->|Response|A
 ```
