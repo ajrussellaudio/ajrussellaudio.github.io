@@ -58,6 +58,7 @@ const typography = new Typography({
       borderBottom: `1px solid rgba(0, 0, 0, 0.2)`
     },
     h1: {
+      ...adjustFontSizeTo("40px"),
       fontWeight: 800
     },
     "h4,h5,h6": {
